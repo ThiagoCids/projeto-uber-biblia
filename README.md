@@ -28,6 +28,12 @@ O passageiro encontra este QR Code disponível no veículo. Se sentir vontade, e
 **2. O Resultado**
 Ao ler o código, o passageiro recebe instantaneamente uma mensagem de esperança (um versículo bíblico) em um layout agradável. A escolha pelo **Dark Mode** foi intencional para não ofuscar a visão do passageiro, especialmente durante corridas noturnas, garantindo conforto visual.
 
+
+
+https://github.com/user-attachments/assets/7be1c4e5-4d62-43eb-abd3-ac61212834d8
+
+
+
 ---
 
 ## 🤝 Desenvolvimento e Colaboração (Human + AI)
