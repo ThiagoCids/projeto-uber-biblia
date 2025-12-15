@@ -1,0 +1,74 @@
+// Variáveis
+$bg-color: #1a1a2e;
+$container-bg: #16213e;
+$text-color: #ffffff;
+$accent-color: #4db5ff; // Cor da referência bíblica
+$border-color: #0f3460;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $bg-color;
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: $container-bg;
+    padding: 40px 30px; // Aumentei um pouco o padding vertical
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid $border-color;
+    
+    // Animação suave ao aparecer
+    animation: fadeIn 0.5s ease-in;
+
+    #caixa-texto {
+        .mensagem-box {
+            font-size: 1.3rem; // Aumentei a fonte para ficar mais legível
+            font-style: italic;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .referencia {
+            font-weight: bold;
+            color: $accent-color;
+            display: block;
+            margin-top: 15px;
+            font-size: 1rem;
+            text-transform: uppercase; // Deixa o livro da bíblia em maiúsculo (estilo)
+            letter-spacing: 1px;
+        }
+    }
+
+    .footer {
+        margin-top: 35px;
+        font-size: 0.9rem;
+        opacity: 0.6;
+        border-top: 1px solid rgba(255, 255, 255, 0.1); // Uma linha fininha separando
+        padding-top: 20px;
+    }
+}
+
+// Uma animaçãozinha simples
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
