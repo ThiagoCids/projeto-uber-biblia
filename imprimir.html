@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Uber - Viagem Tranquila</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .cartao {
+            background: white;
+            width: 12cm; /* Largura ideal */
+            height: 16cm; /* Altura ideal */
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            /* Sombra para ficar bonito na tela, some na impressão */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ddd;
+        }
+
+        h1 {
+            color: #0f172a;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        p.subtitulo {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        img.qrcode {
+            width: 220px;
+            height: 220px;
+            margin-bottom: 2rem;
+        }
+
+        .rodape {
+            background-color: #f8fafc;
+            color: #334155;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            width: 100%;
+            border: 1px dashed #cbd5e1;
+        }
+
+        strong {
+            color: #0f172a;
+        }
+
+        @media print {
+            body { background: white; }
+            .cartao { box-shadow: none; border: 2px solid #000; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cartao">
+        <h1>Viagem tranquila?</h1>
+        
+        <p class="subtitulo">Receba uma mensagem de paz agora.</p>
+
+        <img src="./assets/qrcode.png" alt="QR Code" class="qrcode">
+
+        <div class="rodape">
+            <strong>Sem login • Sem custo</strong><br>
+            Apenas uma leitura rápida.
+        </div>
+    </div>
+
+</body>
+</html>
